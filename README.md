@@ -44,6 +44,19 @@ mutation {
 }
 ```
 
+You can also try the query:
+
+- method: POST
+- url: http://localhost:3000/dev/graphql ( or the one that displays in the terminal)
+
+```graphql
+query {
+  getAPIKey(input: { accountID: "a0934d39-74af-49ff-9bcf-94300ef2cb05" }) {
+    apiKey
+  }
+}
+```
+
 Make sure to setup your [VScode typescript version](#vs-code---typescript-version).
 
 ## Husky
